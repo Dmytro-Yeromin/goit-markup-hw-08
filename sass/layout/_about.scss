@@ -1,0 +1,93 @@
+.about__list {
+  @include padding(60px, 60px);
+
+  @media screen and (min-width: 1200px) {
+    @include padding(94px, 94px);
+    
+  }
+       
+  }
+
+  .about__list{
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: -30px;
+        margin-left: -30px;
+    }
+}
+  .about__list-item{
+    flex-basis: 100%;
+
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 2 * 30px) / 2);
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 4 * 30px) / 4);
+    }
+  }
+  .about__list-item:not(:last-child) {
+    @media screen and (max-width: 768px) {
+        margin-bottom: 30px;
+    }
+}
+
+
+
+  .about__title {
+    font-family: $text-font;
+    @include font(14px, 700, 1.143);
+      text-align: center;
+    text-transform: uppercase;
+    color: $black-color;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    @media screen and (min-width: 768px){
+      text-align: left;
+
+    }
+
+   }
+  
+  .about__text {
+    
+    font-family: $text-font;
+    font-weight: 400;
+    line-height: 1.714;
+    color: $grey-color;
+    
+  }
+  
+  
+  .about__list-item::before {
+    display: block;
+    content: '';
+    height: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+    background-color: $main-bg-color;
+  }
+  
+  
+  .icon-group::before {
+    background-image: url(../images/about_us/Group.svg);
+    background-size: 70px;
+  }
+  
+  .icon-clock::before {
+    background-image: url(../images/about_us/clock.svg);
+    background-size: 70px;
+  }
+  .icon-diagram::before {
+    background-image: url(../images/about_us/diagram.svg);
+    background-size: 70px;
+  }
+  .icon-astronaut::before {
+    background-image: url(../images//about_us/astronaut.svg);
+    background-size: 70px;
+  }

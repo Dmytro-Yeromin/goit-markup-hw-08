@@ -1,0 +1,28 @@
+   .modal-thumb {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $wite-color;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+     & :hover,
+     & :focus {
+    fill: $accent-color;
+  }
+  }
+  
+  .modal-icon-close {
+    fill: currentColor;
+  
+    transition-property: color;
+    transition-duration: $time-animation;
+    transition-timing-function: $bezier-animation;
+  }
+  
+  
