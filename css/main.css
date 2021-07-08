@@ -194,6 +194,7 @@ img {
 }
 
 .main-nav {
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
@@ -229,19 +230,52 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 767px) {
+  .header__nav-list {
+    display: none;
+  }
+}
+
 .header__navigation-list-item:not(:last-child) {
   margin-right: 50px;
 }
 
 .header__nav-list-contact {
-  display: flex;
-  margin-left: auto;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header__nav-icon:not(:last-child) {
-  margin-right: 50px;
+@media screen and (max-width: 767px) {
+  .header__nav-list-contact {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__nav-list-contact {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__nav-list-contact {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__nav-icon:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__nav-icon:not(:last-child) {
+    margin-right: 50px;
+    margin-bottom: 0;
+  }
 }
 
 .header__current-link {
@@ -274,17 +308,33 @@ img {
 }
 
 .header__contact-list-link {
-  padding-top: 32px;
-  padding-bottom: 32px;
   font-weight: 500;
   line-height: 1.143;
   letter-spacing: 0.02em;
   color: #757575;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .header__contact-list-link {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__contact-list-link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.02em;
+  }
 }
 
 .header__contact-list-link:hover, .header__contact-list-link:focus {
@@ -303,12 +353,30 @@ img {
   fill: currentColor;
 }
 
+@media screen and (min-width: 768px) {
+  .menu-open {
+    display: none;
+  }
+}
+
+.menu-open:hover,
+.menu-open:focus {
+  fill: #2196f3;
+}
+
+.mobile-nav.is-open {
+  transform: translateX(0) translateY(0);
+  transition-duration: 250ms;
+}
+
 .mobile-nav {
   position: absolute;
   background-color: #ffffff;
   top: 0;
   width: 100vw;
   height: 100vh;
+  transform: translateX(-50%) translateY(-140%);
+  transition-duration: 250ms;
 }
 
 .mobile-nav .container {
@@ -428,7 +496,7 @@ img {
 }
 
 .mobile-media__item:not(:last-child)::after {
-  content: " ";
+  content: ' ';
   margin-left: 10px;
   width: 22px;
   height: 0px;
@@ -448,7 +516,7 @@ img {
   background-color: #c4c4c4;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px), screen and (min-resolution: 192dpi) and (min-width: 320px), screen and (min-resolution: 2dppx) and (min-width: 320px) {
   .section-hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/header_img_mob@2x.jpg);
   }
@@ -460,7 +528,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 768px) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-width: 768px) and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-width: 768px) and (min-resolution: 2dppx) and (min-width: 768px) {
   .section-hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/header_img_tabl@2x.jpg);
   }
@@ -474,7 +542,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) and (min-width: 1200px) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-width: 1200px) and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-width: 1200px) and (min-resolution: 2dppx) and (min-width: 1200px) {
   .section-hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero_Img@2x.jpg);
   }
