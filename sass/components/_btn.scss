@@ -1,75 +1,74 @@
 .button {
-    font-family: inherit;
-    font-size: inherit;
-    border: none;
-    background-color: transparent;
-    color: inherit;
-  }
-  
-  .model-btn {
-    font-family: var(--text-font);
-    @include font(16px, 700, 1.875);
-    letter-spacing: 0.06em;
-    padding: 10px 32px;
-    color: $wite-color;
-    border-radius: 4px;
-    background-color: $accent-color;
-    transition-duration: $time-animation;
-    transition-timing-function: $bezier-animation;
-  }
-  
-  .model-btn:hover,
-  .model-btn:focus {
-    background-color: #188ce8;
-    color: $wite-color;
-    cursor: pointer;
-    transition-duration: $time-animation;
-    transition-timing-function: $bezier-animation;
-  }
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  background-color: transparent;
+  color: inherit;
+}
 
-  .social-button-list li:not(:last-child) {
-    margin-right: 8px;
-    margin-bottom: 15px;
-    @media screen and (min-width: 768px) {
-      &:not(:last-child) {
-        margin-right: 8px;
-        margin-bottom: 0;
-      }
+.model-btn {
+  font-family: var(--text-font);
+  @include font(16px, 700, 1.875);
+  letter-spacing: 0.06em;
+  padding: 10px 32px;
+  color: $wite-color;
+  border-radius: 4px;
+  background-color: $accent-color;
+  transition-duration: $time-animation;
+  transition-timing-function: $bezier-animation;
+}
+
+.model-btn:hover,
+.model-btn:focus {
+  background-color: #188ce8;
+  color: $wite-color;
+  cursor: pointer;
+  transition-duration: $time-animation;
+  transition-timing-function: $bezier-animation;
+}
+
+.social-button-list li:not(:last-child) {
+  margin-right: 8px;
+  margin-bottom: 15px;
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 8px;
+      margin-bottom: 0;
+    }
   }
 }
-  .social-button-list {
-    display: flex;
+.social-button-list {
+  display: flex;
   flex-wrap: wrap;
   margin-bottom: 40px;
 
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     display: inline-flex;
     margin-bottom: 50px;
+  }
+}
+.social-model-btn {
+  font-family: var(--text-font);
+  @include font(16px, 500, 1.625);
+  cursor: pointer;
+  padding: 6px 22px;
+  border-radius: 4px;
+  background-color: $main-bg-color;
+  transition-property: background-color, box-shadow;
+  transition-duration: $time-animation;
+  transition-timing-function: $bezier-animation;
+}
 
-  }
-  }
-  .social-model-btn {
-    font-family: var(--text-font);
-    @include font(16px, 500, 1.625);
-    cursor: pointer;
-    padding: 6px 22px;
-    border-radius: 4px;
-    background-color: $wite-color;
-    transition-property: background-color, box-shadow;
-    transition-duration: $time-animation;
-    transition-timing-function: $bezier-animation;
-  }
-  
-  .social-model-btn:hover,
-  .social-model-btn:focus {
-    background-color: $accent-color;
-    color: $wite-color;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-      0px 2px 2px rgba(0, 0, 0, 0.12);
-  }
+.social-model-btn:hover,
+.social-model-btn:focus {
+  background-color: $accent-color;
+  color: $main-bg-color;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
 
-  .menu-open{
-    padding: 0;
-    border: none;
-    background-color: transparent;
-  }
+.menu-open {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
