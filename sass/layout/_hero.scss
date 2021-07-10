@@ -9,7 +9,7 @@
     position: center;
     size: cover;
     image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(./../../images/header_img_mob.jpg);
+      url(../images/header_img_mob.jpg);
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -18,7 +18,7 @@
     (min-resolution: 2dppx) {
     .section-hero {
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../../images/header_img_mob@2x.jpg);
+        url(../images/header_img_mob@2x.jpg);
     }
   }
   @media screen and (min-width: 481px) {
@@ -28,7 +28,7 @@
       repeat: no-repeat;
       position: center;
       image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../../images/header_img_tabl.jpg);
+        url(../images/header_img_tabl.jpg);
     }
   }
   @media (min-device-pixel-ratio: 2) and (min-width: 481px),
@@ -37,7 +37,7 @@
     (min-resolution: 2dppx) {
     .section-hero {
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../../images/header_img_tabl@2x.jpg);
+        url(../images/header_img_tabl@2x.jpg);
     }
 
     @media screen and (min-width: 481px) {
@@ -47,7 +47,7 @@
         repeat: no-repeat;
         position: center;
         image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-          url(../../images/header_img_tabl@2x.jpg);
+          url(../images/header_img_tabl@2x.jpg);
       }
     }
     @media screen and (min-width: 769px) {
@@ -57,7 +57,7 @@
         repeat: no-repeat;
         position: center;
         image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-          url(../../images/hero_Img.jpg);
+          url(../images/hero_Img.jpg);
       }
     }
     @media (min-device-pixel-ratio: 2) and (min-width: 769px),
@@ -66,7 +66,7 @@
       (min-resolution: 2dppx) {
       .section-hero {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-          url(../../images/hero_Img@2x.jpg);
+          url(../images/hero_Img@2x.jpg);
       }
     }
   }
