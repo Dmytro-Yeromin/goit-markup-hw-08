@@ -553,6 +553,10 @@ img {
   }
 }
 
+.portfolio-item {
+  outline: 1px solid #f5f4fa;
+}
+
 @media screen and (max-width: 767px) {
   .portfolio-item:not(:last-child) {
     margin-bottom: 30px;
@@ -607,13 +611,11 @@ img {
   transform: translateY(0);
 }
 
-.portfolio-list-images
-.list-images .social-button-list {
+.portfolio-list-images .list-images .social-button-list {
   margin-bottom: 50px;
 }
 
-.portfolio-list-images
-.link-portfolio {
+.portfolio-list-images .link-portfolio {
   display: inline-block;
 }
 
@@ -625,10 +627,6 @@ img {
 .card-titles {
   padding: 20px 24px;
   text-align: left;
-  border-left: 1px solid;
-  border-right: 1px solid;
-  border-bottom: 1px solid;
-  color: #f5f4fa;
 }
 
 .section-team {
