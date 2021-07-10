@@ -182,6 +182,7 @@
   height: 100vh;
   transform: translateX(-50%) translateY(-140%);
   transition-duration: $time-animation;
+  z-index: 1;
 
   .container {
     position: relative;

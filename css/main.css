@@ -377,6 +377,7 @@ img {
   height: 100vh;
   transform: translateX(-50%) translateY(-140%);
   transition-duration: 250ms;
+  z-index: 1;
 }
 
 .mobile-nav .container {
@@ -790,12 +791,6 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-  .team__list-images:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
   .team__list-images:not(:last-child) {
     margin-bottom: 30px;
   }
