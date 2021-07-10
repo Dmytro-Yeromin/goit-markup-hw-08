@@ -183,6 +183,9 @@
   transform: translateX(-50%) translateY(-140%);
   transition-duration: $time-animation;
   z-index: 1;
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
 
   .container {
     position: relative;
