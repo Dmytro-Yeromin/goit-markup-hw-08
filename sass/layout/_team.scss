@@ -73,7 +73,7 @@
 }
 .team__social-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 
   transition-duration: $time-animation;
   transition-timing-function: $bezier-animation;

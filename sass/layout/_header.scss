@@ -75,9 +75,7 @@
     align-items: center;
     margin-left: auto;
   }
-  // display: flex;
-  // margin-left: auto;
-
+ 
   transition-duration: $time-animation;
   transition-timing-function: $bezier-animation;
 }
@@ -171,8 +169,9 @@
 }
 
 .mobile-nav.is-open {
-  transform: translateX(0) translateY(0);
+  transform: translateX(-50%) translateY(-140%);
   transition-duration: $time-animation;
+  
 }
 .mobile-nav {
   position: absolute;
@@ -180,7 +179,7 @@
   top: 0;
   width: 100vw;
   height: 100vh;
-  transform: translateX(-50%) translateY(-140%);
+  transform: translateX(0) translateY(0);
   transition-duration: $time-animation;
   z-index: 1;
   @media screen and (min-width: 767px) {
