@@ -778,10 +778,6 @@ img {
   }
 }
 
-.team__list {
-  margin-bottom: -30px;
-}
-
 @media screen and (min-width: 768px) {
   .team__list {
     display: flex;
@@ -881,7 +877,7 @@ img {
 .section-clients {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: #f5f4fa;
+  background-color: #ffffff;
 }
 
 @media screen and (min-width: 1200px) {
